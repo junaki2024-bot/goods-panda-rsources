@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background-color: #FFFEFA;
+}
+
+.btn{ 
+    background-color: hotpink;
+    padding: 14px 30px ;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+ }
+
+ #hero{ 
+    margin: 50px;
+    padding: 20px;
+    padding-top: 100px ;
+    background: url(bk.png);
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    border: 20%;
+}
+.container{ 
+    width: 87.5%;
+    margin: 0 auto;
+}
+#hero-img{ 
+    width: 600px;
+    vertical-align: middle;
+}
+#hero-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 87.5%;
+    height: 100%;
+    margin:0 auto;
+    padding-right: 20px;
+    padding: 30px;
+}
+#hero-content{ 
+    padding-bottom: 100px;
+}
+.hero-content h1{ 
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+#hero-content p{ 
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.bd h2{ 
+    color: hotpink;
+    padding: 20px;
+}
+.ct h4{ 
+    margin-bottom: 30px;
+    border: 30px;
+    text-align: inherit;
+}
+#ct-section{ 
+    border: none;
+    margin: 50px;
+}
+.ct h4{ 
+    font-size: 30px;
+    margin-top: 20px;
+}
+.categories{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border: none;
+    
+}
+.ct-btn{
+display:flex;
+text-align: center;
+}
+.ct-btn img{ 
+    width: 100px;
+    height: 100px;
+}
+.ct-btn span{ 
+    text-align: middle;
+    font-size: 30px;
+    color: #FFFEFA;
+    font: bold;
+}
+.ct-btn:nth-child(1){
+background:orange;
+}
+.ct-btn:nth-child(2){
+background:hotpink;
+}
+.ct-btn:nth-child(3){
+background: blue;
+}
+#ct-section{ 
+    margin-bottom: 100px;
+}
+.heading h4{ 
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: inherit;
+    padding-bottom: 20px;
+}
+.shoes-box{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.sh-box{ 
+    background-color: white;
+    /*border: 1px solid rebeccapurple;*/
+    padding: 40px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 4px #00000025;
+    border-radius: 16px;
+}
+.sh-box *{ 
+    margin-bottom: 20px;
+}
+#shoes{ 
+    border: none;
+    margin: 50px;
+}
+.sh-box h5{ 
+     font-size: 24px;
+}
+.sh-box button{ 
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: 4px solid black;
+}
+.sh-box img{ 
+    width: 100px;
+    height: 100px;
+}
+#shoes{ 
+    margin-bottom: 100px;
+}
+#last{ 
+    margin-bottom: 100px;
+}
+#last{ 
+    margin: 50px;
+    padding: 20px;
+    padding-top: 100px ;
+    background: url(bk.png);
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    border: 20%;
+}
+.sub{ 
+    text-align: center;
+    color: black;
+}
+.sub-box{ 
+    margin-top: 20px;
+}
+.sub-box input{ 
+    padding: 10px;
+    width: 200px;
+}
+.sub-box button{ 
+    padding: 10px 20px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+}
+.sub-box{ 
+display:flex;
+justify-content:center;   
+align-items:center;
+gap:10px;
+margin-top:20px;
+}
+
+/* ========== Tablet Responsive ========== */
+@media (max-width: 992px){
+
+    #hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-img{
+        width: 100%;
+    }
+
+    #hero-img img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .categories{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ct-btn{
+        width: 200px;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .shoes-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sh-box{
+        width: 300px;
+    }
+
+}
+
+
+/* ========== Mobile Responsive ========== */
+@media (max-width: 576px){
+
+    #hero{
+        margin: 20px;
+        padding-top: 50px;
+    }
+
+    #hero-content h1{
+        font-size: 30px;
+    }
+
+    #hero-content p{
+        font-size: 16px;
+    }
+
+    .categories{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ct-btn{
+        width: 90%;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .ct-btn img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .ct-btn span{
+        font-size: 22px;
+    }
+
+    .shoes-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sh-box{
+        width: 90%;
+    }
+
+    .sub-box{
+        flex-direction: column;
+    }
+
+    .sub-box input{
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
